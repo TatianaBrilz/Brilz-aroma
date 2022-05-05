@@ -1,264 +1,85 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@charset "UTF-8";
+body {
+  background-image: url(../imagen/ohtilly-rXo51TSGKkg-unsplash.jpg);
+  background-color: transparent;
+  background-size: 100%;
 }
 
-.contenedorIndex{
-position: relative;
-padding-bottom: 7em;
-min-height: 100vh;
-}
-
-.footer{
-  position: absolute;
-  width: 100%;
-}
-
-.imagenLogo{ /*Logo Pagina Principal*/
+/*Nosotros*/
+.ContenidoNosotros__h2 {
+  font-size: 5em;
   text-align: center;
+  margin-top: 70px;
+  margin-bottom: 22px;
+  font-family: 'Bebas Neue', cursive;
+  color: #d33643;
+}
+
+.ParrafoNosotros {
+  font-size: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
-  padding-left:8rem;
+  align-items: center;
+  padding: 20px;
+  color: #031306;
 }
 
-.imagenesProductos {
-  margin-top: 200px;
-  width: 100px;
-  height: 100px;
+/*Finaliza Nosotros*/
+/*Comienza catálogo*/
+.catalogo {
+  font-size: 7em;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 22px;
+  font-family: 'Bebas Neue', cursive;
 }
 
-.formCompletar{ /*Comienza Formulario*/
-  display:flex;
+.CatalogoDiapositiva {
+  height: 800px;
+  max-width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+
+/*Comienza Formulario*/
+.formCompletar {
+  display: flex;
   width: 400px;
-  background-color:  rgba(59, 59, 59, 0);
-  color: rgb(4, 4, 4);
+  background-color: rgba(59, 59, 59, 0);
+  color: #040404;
   margin: auto;
   margin-top: 50px;
   flex-direction: column;
   text-align: start;
-
 }
 
-.controls {/*Finaliza Formulario*/
+.controls {
   width: 100%;
-  background:#d1ccccf5 ;
+  background: #d1ccccf5;
   padding: 9px;
   margin-bottom: 16px;
   border: 1px solid;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.ContenedorEmprender{ /*Fondo Queres Emprender*/
- background-image: url(../imagen/zane-lee-iru3lemAGKU-unsplash.jpg);
- background-size: cover;
- background-repeat:no-repeat;
- height: 100%;
- background-attachment:local;
- background-position: center;
-
-}
-
-.ContenedorCatalogo{ /*Fondo Catalogo*/
-  background-image: url(../imagen/evie-s-_8vovuZCj0c-unsplash.jpg);
-  background-size: cover;
-  background-repeat:no-repeat;
-  height: 100%;
-  background-attachment:local;
-  background-position: center;
-
-}
-
-.ContenedorProductos{ /*Fondo productos*/
-  background-image: url(../imagen/darren-nunis-cxE7SXKnzv0-unsplash.jpg);
-  background-size:cover;
-  justify-content: center;
-  position:sticky;
-  background-repeat:no-repeat;
-  height: 200vh;
-  background-attachment:local;
-  background-position: center;
-  margin-top: 100px;
-  align-items: center;
- font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
-.CatalogoDiapositiva iframe{ /*Diapositiva*/
-  height: 800px;
-  width: 800px;
-  justify-content: space-between;
-  position: relative;
- margin: auto;
-}
-
-.ParrafoNosotros{ /*Fin Diapo*/
-  font-size: 22px;
+.Informacion {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 22px;
-  font-family:'Bebas Neue', cursive;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 32px;
 }
 
-
-  /*GRIDS*/
-
-  .contenedorIndex{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 500px 100px;
-    grid-template-areas: "nav    nav "
-                         "footer footer"
-  }
-  
-  .inicio{
-    grid-area: nav;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .inicio, .menu{
-    grid-area: nav;
-    width: 100%; 
-    padding-right: 5px;
-    display: flex; 
-    align-items:  center; 
-    flex-direction: column;
-   }
-
-   .inicio, .ul, .li, .a{
-     grid-area: nav;
-     display: inline-block;
-     margin-right: 5px; 
-   }
-  
-  .footer{
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer, .SobreNosotros{
-    margin-top: 15px;
-  }
-  .footer, .letraParrafo{
-    text-align: center;
-    display: flex;
-    margin-right: 15px;
-    flex-direction: column;
-  }
-  .imagenLogo, .img{
-    width: 15rem;
-    height: 11rem;
-    display:flex;
-    padding-bottom: 35px;
-    padding-left: 55px;
-    justify-content: center;
-  }
-  .ContenedorNosotros{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 400px 500px 200px;
-    grid-template-areas: "nav    nav "
-                         "main   main"
-                         "footer footer"
-  }
-  .inicio{
-    grid-area: nav;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .inicio, .menu{
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  .ContenedorNosotros{
-    grid-area: main;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .ContenidoNosotros__2, .h2{
-    font-size: 12px;
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 22px;
-    font-family:'Bebas Neue', cursive;
+.titulo {
+  font-size: 4rem;
+  color: red;
+  margin: 20px;
 }
 
-.ParrafoNosotros{
-  font-size: 12px;
+/*Finaliza Formulario*/
+.footer {
+  grid-area: footer;
+  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
 }
-
-  
-  @media (min-width:1200px){
-    .ContenedorNosotros{
-      background-image: url(../imagen/yenli-tand-WFTW5yFkxTM-unsplash.jpg);
-      margin-bottom: 700px;
-      position:sticky;
-      justify-content: center;
-      background-size:cover;
-      background-repeat:no-repeat;
-      background-attachment:local;
-      background-position: center;
-    }
-  }
-
-  .ContenidoNosotros__h2{ /*Titulo de Productos-Catálogo-Nosotros*/
-      font-size: 42px;
-      text-align: center;
-   
-      font-family:'Bebas Neue', cursive;
-    }
-    
-    .ParrafoNosotros{
-      font-size: 20px;
-    }
-    
-  
-  @media (min-width:1200px){
-    .contenedorIndex{
-      grid-template-rows: 800px 100px;
-   
-    }
-    .contenedorIndex{
-      background-image: url(../imagen/ohtilly-rXo51TSGKkg-unsplash.jpg);
-      overflow-x: hidden;
-      background-repeat:repeat;
-      background-position: center;
-      background-attachment: local;
-      background-size: 100%;
-      margin-bottom: 12.5rem;
-
-    }
-
-    .imagenLogo, .img{
-      text-align: center;
-      justify-content: center;
-      margin-bottom: 40px;
-      padding-left:16rem;
-      width: auto;
-      width: 55rem;
-      height: 32rem
-    }
-
-    
-
-
-  }
-
-/*GIT*/
-
-/*Bootstrap*/
-
-.ContenedorProductos{
-  position: absolute;
-}
+/*# sourceMappingURL=style.css.map */

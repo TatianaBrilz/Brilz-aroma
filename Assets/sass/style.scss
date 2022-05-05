@@ -1,0 +1,86 @@
+body{
+    background-image: url(../imagen/ohtilly-rXo51TSGKkg-unsplash.jpg);
+    background-color: transparent;
+    background-size: 100%;
+}
+
+/*Nosotros*/
+.ContenidoNosotros__h2{
+    font-size: 5em;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 22px;
+    font-family:'Bebas Neue', cursive;
+    color:rgb(211, 54, 67);
+}
+
+.ParrafoNosotros{
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: rgb(3, 19, 6);
+}
+ /*Finaliza Nosotros*/
+
+ /*Comienza catálogo*/
+.catalogo{
+  font-size: 7em;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 22px;
+  font-family:'Bebas Neue', cursive;
+}
+
+.CatalogoDiapositiva{
+  height: 800px;
+  max-width: 100%;
+  justify-content:center;
+  margin: auto;
+
+}
+
+/*Comienza Formulario*/
+.formCompletar{ 
+    display:flex;
+    width: 400px;
+    background-color:  rgba(59, 59, 59, 0);
+    color: rgb(4, 4, 4);
+    margin: auto;
+    margin-top: 50px;
+    flex-direction: column;
+    text-align: start;
+}
+
+.controls {
+    width: 100%;
+    background:#d1ccccf5 ;
+    padding: 9px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Informacion{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+}
+
+.titulo{
+    font-size: 4rem;
+    color: red;
+    margin: 20px;
+}
+/*Finaliza Formulario*/
+  
+.footer{
+
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}  
